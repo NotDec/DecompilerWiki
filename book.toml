@@ -1,0 +1,12 @@
+[book]
+title = "Decompiler Wiki"
+description = "decompiler.wiki aims to demystify the internals of decompilers"
+language = "en"
+multilingual = false
+src = "src"
+
+[output.html]
+mathjax-support = true
+git-repository-url = "https://github.com/NotDec/DecompilerWiki"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/NotDec/DecompilerWiki/edit/main/{path}"
