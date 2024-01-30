@@ -1,4 +1,4 @@
-# Decompiler Wiki
+# [Decompiler Wiki](https://decompiler.wiki)
 
 [decompiler.wiki](https://decompiler.wiki) aims to demystify the internals of [decompilers](https://en.wikipedia.org/wiki/Decompiler).
 
