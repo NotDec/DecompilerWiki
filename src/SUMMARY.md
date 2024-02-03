@@ -7,4 +7,5 @@
 - [The Website](website.md)
 - [Awesome Decompiler](resources/README.md)
 - [Systematic Literature Review](SLR/README.md)
+  - [What is SLR?](SLR/intro.md)
 - [Other Entries](entries/README.md)

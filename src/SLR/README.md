@@ -1,31 +1,36 @@
 # A Systematic Literature Review of Decompilation
 
-## What is a SLR?
+This page contains a systematic literature review of binary decompilation. For the introduction of SLR, [check here](intro.md).
 
-The systematic literature review originates from medical research and social science but has been adapted and extended to Software Engineering:
+## Background
 
-- ["SEGRESS: Software Engineering Guidelines for REporting Secondary Studies"](https://ieeexplore.ieee.org/document/9772383)
-- ["Guidelines for performing Systematic Literature Reviews in Software Engineering"](https://legacyfileshare.elsevier.com/promis_misc/525444systematicreviewsguide.pdf)
+The technique of decompilation still has significant limitations, as existing research on [lifter sok] and [fidelity issue] demonstrates. This indicates that there is still a lot of room for improvement in decompilers.
 
-To simplify:
-- It is based on a defined search strategy that aims to detect as much of the relevant literature as possible.
-- If some literature is excluded, it requires explicit inclusion and exclusion criteria to assess each potential primary study.
-- Specify the information to be obtained from each primary 
-study including quality criteria by which to evaluate each primary study.
+TODO
 
-**Other types of review**：
+## Research Question
 
-- Systematic Mapping Studies: plot the studies to find clusters and deserts to identify potential research areas or direct the focus of future systematic reviews.
-- Tertiary Reviews: a systematic review of systematic reviews to answer wider research questions. (If a number of systematic reviews exist already).
 
-### Filtering
+## Search Strategy
 
-If there are too many articles, you can filter them by:
+Keywords: Decompilation OR Decompiler OR Decompile
 
-- Study Type
-  - include: Review and original content
-  - exclude: Reports, thesis, and editorials
-- Source: Peer-reviewed articles, Conference proceedings.
-- Year of Publication: filter out something too old
-- Language: only include English
-- Techniques
+### Search Process
+
+**Paper Repositories**: Important paper repositories covered in [findpapers](https://github.com/jonatasgrosman/findpapers): IEEE Xplore, ACM, Scopus, arXiv. Other important conference: Usenix, NDSS, DBLP.
+
+Steps:
+
+- Follow the usage of the tool [findpapers](https://github.com/jonatasgrosman/findpapers)
+  - Apply for [access keys](https://github.com/cabrerac/semi-automatic-literature-survey?tab=readme-ov-file#requirements) for IEEE and scorpus.
+  - using this command: (findpapers 0.6.7, 2024-02-03, [the generated json file can be downloaded here.](README/search.json))
+    ```bash
+    findpapers search ./search.json --token-ieee "$IEEE_TOKEN" --token-scopus "$SCOPUS_TOKEN" -q "[decompile] OR [decompiling] OR [decompiler] OR [decompilation]"
+    ```
+
+
+
+## Study Selection Criteria
+
+- Language: English
+
